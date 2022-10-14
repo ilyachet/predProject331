@@ -23,7 +23,7 @@
         <td th:text="${user.getName()}"></td>
         <td th:text="${user.getLastName()}"></td>
         <td th:text="${user.getAge()}"></td>
-        <td><a th:href="@{/{id}(id=${user.getId()})}" th:text="check">check</a>
+        <td><a th:href="@{/users/{id}(id=${user.getId()})}" th:text="check">check</a>
 <!--            <a th:href="@{/{id}/edit(id=${user.getId()})}" th:text="edit">edit</a>-->
 <!--            <a th:href="@{/{id}/delete(id=${user.getId()})}" th:text="edit">edit</a>-->
         </td>
@@ -31,6 +31,6 @@
     </tbody>
 </table>
 
-<h2><a href="/new">Create new User</a></h2>
+<h2><a href="/users/new">Create new User</a></h2>
 </body>
 </html>
